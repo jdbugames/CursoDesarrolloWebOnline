@@ -1,57 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
+        <meta charset="UTF-8">
         <title> Hola Soy Juan David</title>
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <Link rel="stylesheet" href="css/estilos.css"> 
     </head>
     <body>
        <header>
            <div>
                <figure>
-                   <img src="" alt="Logo de http://jdbugames.com">
+                   <img src="images/LogoyNombre.png" alt="Logo de http://jdbugames.com">
                </figure>
                 <nav>
                     <ol>
                         <li>
-                            <a>Portafolio</a>
+                            <a class="link" href="#portafolio">Portafolio</a>
                         </li>
                         <li>
-                            <a>Experiencia</a>
+                            <a class="link" href="#eventos">Experiencia</a>
                         </li>
                         <li>
-                            <a>Trabajemos Juntos</a>
+                            <a class="link" href="#contacto">Trabajemos Juntos</a>
                         </li>
                     </ol>
                 </nav>
            </div>
        </header>
-       <section>
+       <section class="portafolio">
            <h1>
                Hola! Soy <strong>Juan David Barrera Urrego</strong>  <br> <strong>Programador</strong>  <br> con pasión por el <strong>Desarrollo de Software</strong>.
            </h1>
-           <img> Imagen de Portada
+           <img src="images/hero.jpg" width="500" height="300" alt="Imagen Principal Del Sitio">
        </section>
-       <section>
+       <section id="portafolio" class="portafolio">
             <h2>Portafolio (Proyectos Destacados)</h2>
-           <article>
-               <h3>Proyecto 01</h3>
-               <h6>Unity3D</h6>
-               <p><small><strong>Fecha:</strong> 05/06/2020</small></p>
-               <p><small><strong>Puedes verlo en:</strong> https://github.com/jdbugames/CursoDesarrolloWebOnline </small></p>
-               <p>Proyecto desarrollado en Unity3D...</p>
-           </article>
+            <article>
+                <h3>Proyecto 01</h3>
+                <h6>Unity3D</h6>
+                <p><small><strong>Fecha:</strong> 05/06/2020</small></p>
+                <p><small><strong>Puedes verlo en:</strong> https://github.com/jdbugames/CursoDesarrolloWebOnline </small></p>
+                <p>Proyecto desarrollado en Unity3D durante el Global Game Jam en la ciudad de Medellin en el año 2020</p>
+                <img src="images/GGJ-Game.jpg" alt="Videojuego Realizado" width="500">
+            </article>
        </section>
-       <section>
+       <section id="eventos">
            <h2>Más sobre mi experiencia</h2>
            <article>
                 <figure>
-                    <img src="" alt="">
+                    <img src="images/GlobalGJ.jpg" width="500" alt="">
                 </figure>
                 <h3>Global GameJam 2020</h3>
                 <p>El Global Game Jam es un evento que se celebra simultáneamente en aproximadamente 96 países, en donde las personas apasionadas por la creación de juegos divertidos, creativos y experimentales se reúnen para realizar prototipos y demostraciones de juegos en un breve periodo de tiempo. Esta maratón, única en su especie, reúne talentos y aficionados en la creación de videojuegos como diseñadores, artistas, profesores, programadores y músicos para que muestren todo su potencial en una jornada de 48 horas sin interrupciones.</p>
-                <a>Ver Evento</a>
+                <a href="https://globalgamejam.org/" target="_blank">Ver Evento</a>
             </article>
        </section>
-       <section>Sección Contacto</section>
+       <section id="contacto">
+           <form action="/suscripcion/">
+                <h3>¿Creamos algo juntos?</h3>
+                <input type="text" placeholder="Déjame tu email" id="email">
+                <button>Enviar</button>
+           </form>
+       </section>
        <footer>Footer</footer>
     </body>
 </html>
